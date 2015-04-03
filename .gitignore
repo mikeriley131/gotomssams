@@ -1,0 +1,5 @@
+_assets/images/*
+bower_components/*
+design/*
+node_modules/*
+.sass-cache
