@@ -1,4 +1,5 @@
 _assets/images/*
+_design/*
 bower_components/*
 design/*
 node_modules/*
