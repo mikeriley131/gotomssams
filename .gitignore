@@ -1,6 +1,6 @@
 _assets/images/*
 _design/*
 bower_components/*
-design/*
+_design/*
 node_modules/*
 .sass-cache
