@@ -19,6 +19,69 @@
 	</head>
 
 	<body class="gridlock">
-		<p>Hello world.</p>
+		<header>
+			<div>
+				<img src="_assets/images/go-to-ms-sams-logo.svg" alt="Go To Ms. Sams logo">
+			</div>
+			<nav>
+				<ul>
+					<li>About Ms. Sams</li>
+					<li>What We Do</li>
+					<li>Blog</li>
+					<li>Contact</li>
+					<li>
+						<ul>
+							<li>Facebook</li>
+							<li>Instagram</li>
+							<li>Linked In</li>
+							<li>Twitter</li>
+						</ul>
+					</li>
+				</ul>
+			</nav>
+		</header>
+		<section>
+			<!-- HERO IMAGE -->
+			<div>
+				<p>Go to Ms.Sams consults with nonprofits, schools and the business community to create structures that promote meaningful and impactful relationships with youth.</p>
+			</div>
+		</section>
+		<section>
+			<!-- WHAT WE DO -->
+			<div>
+				<h3>School Climate &amp; Culture</h3>
+				<p>Creating a school culture that fosters a positive and productive learning environment.</p>
+			</div>
+			<div>
+				<h3>Mentoring</h3>
+				<p>Using best practices that establish deep connections to youth.</p>
+			</div>
+			<div>
+				<h3>School &amp; Business Partnerships</h3>
+				<p>Connecting schools and the business community for early career exposure and experiential learning opportunities.</p>
+			</div>
+		</section>
+		<section>
+			<div>
+				<p>1</p>
+			</div>
+			<div>
+				<p>2</p>
+			</div>
+			<div>
+				<p>3</p>
+			</div>
+			<div>
+				<p>4</p>
+			</div>
+		</section>
+		<section>
+			<form action="">
+				
+			</form>
+		</section>
+		<footer>
+			
+		</footer>
 	</body>
 </html>
