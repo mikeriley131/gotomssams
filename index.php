@@ -9,7 +9,8 @@
 
 		<title>Go to Ms. Sams</title>
 		
-		<link rel="stylesheet" href="assets/css/main.min.css" />
+		<link href='http://fonts.googleapis.com/css?family=Roboto+Slab:400,700|Open+Sans' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" href="_assets/css/main.min.css" />
 
 		<!-- <script src="assets/js/main.min.js"></script> -->
 
@@ -19,28 +20,28 @@
 	</head>
 
 	<body class="gridlock">
-		<header>
-			<div>
+		<header class="row">
+			<div class="logo">
 				<img src="_assets/images/go-to-ms-sams-logo.svg" alt="Go To Ms. Sams logo">
 			</div>
 			<nav>
 				<ul>
-					<li>About Ms. Sams</li>
-					<li>What We Do</li>
-					<li>Blog</li>
-					<li>Contact</li>
+					<li><a href="">About Ms. Sams</a></li>
+					<li><a href="">What We Do</a></li>
+					<li><a href="">Blog</a></li>
+					<li><a href="">Contact</a></li>
 					<li>
-						<ul>
-							<li>Facebook</li>
-							<li>Instagram</li>
-							<li>Linked In</li>
-							<li>Twitter</li>
+						<ul class="social">
+							<li class="fb"><a href="">Facebook</a></li>
+							<li class="inst"><a href="">Instagram</a></li>
+							<li class="li"><a href="">Linked In</a></li>
+							<li class="twit"><a href="">Twitter</a></li>
 						</ul>
 					</li>
 				</ul>
 			</nav>
 		</header>
-		<section>
+		<section class="hero">
 			<!-- HERO IMAGE -->
 			<div>
 				<p>Go to Ms.Sams consults with nonprofits, schools and the business community to create structures that promote meaningful and impactful relationships with youth.</p>
@@ -77,7 +78,14 @@
 		</section>
 		<section>
 			<form action="">
-				
+				<ul>
+					<li><input type="text" placeholder="Your Name"></li>
+					<li><input type="email" placeholder="Your Email"></li>
+					<li><input type="text" placeholder="Phone No."></li>
+					<li><input type="text" placeholder="City"></li>
+					<li><textarea>Your Message</textarea></li>
+					<li></li>
+				</ul>
 			</form>
 		</section>
 		<footer>

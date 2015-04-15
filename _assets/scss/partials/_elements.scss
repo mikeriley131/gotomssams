@@ -2,10 +2,13 @@
 ==== GLOBAL ELEMENTS
 ============================================================================== */
 body {
-
+	background-color: #fff;
+	font-family: $copy;
+	font-size: 14px;
+	line-height: 1.5;
 }
 h1, h2, h3, h4 {
-
+	font-family: $headings;
 }
 p {
 
@@ -17,8 +20,12 @@ a:hover, a:active {
 
 }
 ul, ol {
-
+	margin: 0;
+	padding: 0;
 }
 li {
 
+}
+blockquote {
+	font-family: $headings;
 }

@@ -1,3 +1,84 @@
 /* ===========================================================================
 ==== HEADER
 ============================================================================== */
+header {
+	margin-top: 40px;
+}
+.logo {
+	float: left;
+
+	img {
+		width: 225px;
+	}
+}
+nav {
+	float: right;
+	font-family: $headings;
+	font-size: 16px;
+	text-transform: lowercase;
+	color: $grey;
+	margin-top: 8.5em;
+
+	ul {
+		list-style-type: none;
+	}
+
+	li {
+		float: left;
+		margin-right: 3em;
+	}
+
+	a {
+		color: inherit;
+		text-decoration: none;
+
+		&:hover {
+			color: $blue;
+		}
+	}
+
+	.social li {
+		background: url(../images/social-sprite.svg) no-repeat;
+		background-size: 85px;
+		display: block;
+		width: 18px;
+		height: 18px;
+		text-indent: 2em;
+		overflow: hidden;
+		white-space: nowrap;
+		margin-right: 1.5em;
+
+		&.fb {
+			width: 8px;
+
+			&:hover {
+				background-position: 0 -21px;
+			}
+		}	
+
+		&.inst {
+			background-position: -13px 0;
+
+			&:hover {
+				background-position: -13px -21px;
+			}
+		}
+
+		&.li {
+			background-position: -37px 0;
+
+			&:hover {
+				background-position: -37px -21px;
+			}
+		}
+
+		&.twit {
+			width: 24px;
+			background-position: -60px 0;
+
+			&:hover {
+				background-position: -60px -21px;
+			}
+		}
+	}
+}
