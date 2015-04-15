@@ -9,7 +9,7 @@
 
 		<title>Go to Ms. Sams</title>
 		
-		<link href='http://fonts.googleapis.com/css?family=Roboto+Slab:400,700|Open+Sans' rel='stylesheet' type='text/css'>
+		<link href='http://fonts.googleapis.com/css?family=Roboto+Slab:300,400,700|Open+Sans' rel='stylesheet' type='text/css'>
 		<link rel="stylesheet" href="_assets/css/main.min.css" />
 
 		<!-- <script src="assets/js/main.min.js"></script> -->
@@ -41,13 +41,18 @@
 				</ul>
 			</nav>
 		</header>
-		<section class="hero">
-			<!-- HERO IMAGE -->
-			<div>
-				<p>Go to Ms.Sams consults with nonprofits, schools and the business community to create structures that promote meaningful and impactful relationships with youth.</p>
+		<section class="hero-image">
+			<div class="row">
+				<p>Making meaningful connections with young people.</p>
+			</div>
+			<img src="_assets/images/go-to-ms-sams-homepg-feature.jpg" alt="">
+		</section>
+		<section class="hero-text">
+			<div class="row">
+				<p>Go to Ms.Sams consults with non-profits, schools and the business community to create structures that promote meaningful and impactful relationships with youth.</p>
 			</div>
 		</section>
-		<section>
+		<section class="row">
 			<!-- WHAT WE DO -->
 			<div>
 				<h3>School Climate &amp; Culture</h3>
@@ -62,7 +67,7 @@
 				<p>Connecting schools and the business community for early career exposure and experiential learning opportunities.</p>
 			</div>
 		</section>
-		<section>
+		<section class="row">
 			<div>
 				<p>1</p>
 			</div>
@@ -76,7 +81,7 @@
 				<p>4</p>
 			</div>
 		</section>
-		<section>
+		<section class="row">
 			<form action="">
 				<ul>
 					<li><input type="text" placeholder="Your Name"></li>

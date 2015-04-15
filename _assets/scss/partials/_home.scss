@@ -1,3 +1,35 @@
 /* ===========================================================================
 ==== HOME PAGE STYLES
 ============================================================================== */
+.hero-image {
+
+	p {
+		font-family: $headings;
+		font-size: 1.5em;
+		color: #fff;
+		margin-top: .5em;
+	}
+
+	img {
+		width: 100%;
+		position: relative;
+		z-index: -10;
+		margin-top: -7.5em;
+	}
+}
+.hero-text {
+	  background-color: rgba(100,194,210,.7);
+	  padding: 2.125em 0 1em;
+	  position: relative;
+	  top: -1.5em;
+
+	p {
+		font-family: $headings;
+		font-size: 1.66em;
+		font-weight: 300;
+		text-align: center;
+		color: $dark-grey;
+		padding: 0 3em;
+		margin: 0;
+	}
+}
