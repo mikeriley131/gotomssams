@@ -11,7 +11,39 @@
 /* LARGE SCREENS (DESKTOP/LAPTOP)
 ----------------------------------------------------------------------------*/
 @media screen and (min-width: 980px) {
-
+	nav {
+		margin-top: 8em;
+	}
+	.home {
+		h3 {
+			font-size: 18px;
+			margin-bottom: .25em;
+		}
+	}
+	.hero-image {
+		p {
+			font-size: 1.25em;
+		}
+		img {
+			margin-top: -6.5em;
+		}
+	}
+	.what-we-do {
+		p {
+			font-size: 16px;
+		}
+	}
+	.our-process {
+		.process-number {
+			width: 17%;
+		}
+		p {
+			font-size: 120px;
+		}
+	}
+	.contact li.phone {
+		width: 48.5%;
+	}
 }
 
 /* IPAD SPECIFICALLY

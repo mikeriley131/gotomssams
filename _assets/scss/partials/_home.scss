@@ -1,8 +1,25 @@
 /* ===========================================================================
 ==== HOME PAGE STYLES
 ============================================================================== */
+.home {
+	h2 {
+		font-size: 44px;
+		font-weight: 300;
+		color: $mid-grey;
+		margin-bottom: .75em;
+	}
+	h3 {
+		font-size: 22px;
+		font-weight: 700;
+		color: $light-grey;
+		margin-bottom: 0;
+	}
+}
+.bordered .row {
+	padding: 4em 1.5em;
+	border-bottom: 2px dotted $mid-grey;
+}
 .hero-image {
-
 	p {
 		font-family: $headings;
 		font-size: 1.5em;
@@ -19,9 +36,8 @@
 }
 .hero-text {
 	  background-color: rgba(100,194,210,.7);
-	  padding: 2.125em 0 1em;
-	  position: relative;
-	  top: -1.5em;
+	  padding: 3em 0 1em;
+	  margin-top: -2.5em;
 
 	p {
 		font-family: $headings;
@@ -31,5 +47,83 @@
 		color: $dark-grey;
 		padding: 0 3em;
 		margin: 0;
+	}
+}
+.what-we-do {
+	div {
+		padding: 0 2em;
+
+		&:nth-child(2) {
+			padding-left: 0;
+		}
+		&:nth-child(4) {
+			padding-right: 0;
+		}
+	}
+	p {
+		font-size: 18px;
+		color: $light-grey;
+	}
+}
+.our-process {
+	.row {
+		padding: 6em 1.5em;
+	}
+	h2 {
+		float: left;
+		margin-right: .5em;
+	}
+	.process-number {
+		float: left;
+		width: 18%;
+	}
+	p {
+		font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+		font-size: 166px;
+		font-weight: bold;
+		line-height: .5;
+		color: #dadcde;
+		margin-bottom: 0;
+	}
+}
+.contact {
+	.row {
+		padding: 4em 1.5em;
+	}
+	h2 {
+		float: left;
+		margin-right: .5em;
+	}
+	form {
+		font-family: $headings;
+	}
+	ul {
+		float: left;
+		list-style-type: none;
+	}
+	li {
+		float: left;
+		width: 100%;
+		margin-bottom: 1.5em;
+
+		&.phone {
+			width: 48.75%;
+			margin-right: 1.5em;
+		}
+		&.city {
+			width: 49%;
+		}
+	}
+	input, textarea {
+		width: 100%;
+		color: $light-grey;
+		padding: 1em;
+		  border: 1px solid #b1b3b3;
+	}
+	input[type='submit'] {
+		width: 25%;
+		background-color: #64c2d2;
+		color: #fff;
+		border: none;
 	}
 }
