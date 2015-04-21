@@ -128,6 +128,19 @@ nav .social li a.twit:hover {
   background-position: -60px -21px;
 }
 
+.nav-toggle {
+  color: #fff;
+  float: right;
+  height: 25px;
+  padding-right: 25px;
+  margin-top: 30px;
+  margin-right: 1.5em;
+  text-indent: -9999px;
+  overflow: hidden;
+  display: block;
+  background: url(http://www.jhsph.edu/sebin/y/j/menu-icon.gif) no-repeat;
+}
+
 /* ===========================================================================
 ==== HOME PAGE STYLES
 ============================================================================== */

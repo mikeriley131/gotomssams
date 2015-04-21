@@ -15,12 +15,14 @@
     "_assets/css/main.min.css": [
       "bower_components/normalize-css/normalize.css",
       "bower_components/Gridlock/fs.gridlock.css",
-      "_assets/css/main.css"
+      "_assets/css/main.css",
+      "_assets/css/responsive-nav.css"
     ]
   },
   "js": {
     "_assets/js/main.min.js": [
       "bower_components/jquery/dist/jquery.min.js",
+      "_assets/js/responsive-nav.min.js",
       "_assets/js/main.js"
     ]
   }

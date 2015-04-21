@@ -12,7 +12,7 @@
 		<link href='http://fonts.googleapis.com/css?family=Roboto+Slab:300,400,700|Open+Sans:400,700' rel='stylesheet' type='text/css'>
 		<link rel="stylesheet" href="_assets/css/main.min.css" />
 
-		<!-- <script src="assets/js/main.min.js"></script> -->
+		<script src="_assets/js/main.min.js"></script>
 
 		<!--[if lt IE 9]>
 		<script src="http://html5shiv-printshiv.googlecode.com/svn/trunk/html5shiv-printshiv.js"></script>
@@ -21,10 +21,10 @@
 
 	<body class="gridlock home">
 		<header class="row">
-			<div class="logo max-3 desktop-3 tablet-1">
+			<div class="logo max-3 desktop-3 tablet-1 mobile-1">
 				<a href="/"><img src="_assets/images/go-to-ms-sams-logo.svg" alt="Go To Ms. Sams logo"></a>
 			</div>
-			<nav class="max-9 desktop-9 tablet-5">
+			<nav class="max-9 desktop-9 tablet-5 mobile-2 nav-collapse">
 				<ul>
 					<li><a href="">About Ms. Sams</a></li>
 					<li><a href="">What We Do</a></li>
@@ -106,5 +106,8 @@
 				<p>Making meaningful connections with young people. &nbsp; &copy;<?php echo date('Y') ?> Jamila Sams</p>
 			</div>
 		</footer>
+		<script>
+		  var nav = responsiveNav(".nav-collapse");
+		</script>
 	</body>
 </html>
