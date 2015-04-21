@@ -10,7 +10,7 @@
 
 /* LARGE SCREENS (DESKTOP/LAPTOP)
 ----------------------------------------------------------------------------*/
-@media screen and (min-width: 980px) {
+@media screen and (min-width: 980px) and (max-width: 1219px) {
 	nav {
 		margin-top: 8em;
 	}
@@ -55,7 +55,71 @@
 /* TABLETS
 ------------------------------------------------------------------------------ */
 @media screen and (min-width: 740px) and (max-width: 979px) {
+	nav {
+		margin-top: 2.5em;
 
+		li {
+			margin-right: 1.5em;
+		}
+		.social li {
+			margin-right: 1em;
+		}
+	}
+	.home {
+		h2 {
+			font-size: 36px;
+			margin-bottom: .75em;
+		}
+		h3 {
+			font-size: 18px;
+		}
+	}
+	.hero-image {
+		p {
+			font-size: 1em;
+			top: -1em;
+		}
+		img {
+			margin-top: -5.25em
+		}
+	}
+	.hero-text {
+		padding-top: 2em;
+		margin-top: -1.5em;
+
+		p {
+			font-size: 1.125em;
+		}
+	}
+	.bordered .row {
+		padding: 2em 1.5em;
+	}
+	.what-we-do {
+		div {
+			padding: 0;
+		}
+		p {
+			font-size: 16px;
+		}
+	}
+	.our-process {
+		.row {
+			padding: 4em 1.5em 5.5em;
+		}
+		h2 {
+			margin-bottom: 1.5em;
+			float: none;
+		}
+		.process-number {
+			width: 25%;
+		}
+	}
+	.contact li.phone {
+		width: 47.75%;
+	}
+	footer p {
+		font-size: .75em;
+	}
 }
 
 /* MEDIUM SCREENS (LARGE PHONES)

@@ -21,10 +21,10 @@
 
 	<body class="gridlock home">
 		<header class="row">
-			<div class="logo max-3 desktop-3">
+			<div class="logo max-3 desktop-3 tablet-1">
 				<a href="/"><img src="_assets/images/go-to-ms-sams-logo.svg" alt="Go To Ms. Sams logo"></a>
 			</div>
-			<nav class="max-9 desktop-9">
+			<nav class="max-9 desktop-9 tablet-5">
 				<ul>
 					<li><a href="">About Ms. Sams</a></li>
 					<li><a href="">What We Do</a></li>
@@ -91,11 +91,11 @@
 				<h2 class="max-2">Contact:</h2>
 				<form action="" class="max-10">
 					<ul>
-						<li><input type="text" id="name" placeholder="Your Name"></li>
-						<li><input type="email" id="email" placeholder="Your Email"></li>
+						<li><input type="text" id="name" placeholder="Your Name" required></li>
+						<li><input type="email" id="email" placeholder="Your Email" required></li>
 						<li class="phone"><input type="text" id="phone" placeholder="Phone No."></li>
-						<li class="city"><input type="text" id="city" placeholder="City"></li>
-						<li><textarea id="message">Your Message</textarea></li>
+						<li class="city"><input type="text" id="city" placeholder="City" required></li>
+						<li><textarea id="message" required>Your Message</textarea></li>
 						<li><input type="submit" id="submit"></li>
 					</ul>
 				</form>

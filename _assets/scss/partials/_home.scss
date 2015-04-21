@@ -25,13 +25,15 @@
 		font-size: 1.5em;
 		color: #fff;
 		margin-top: .5em;
+		position: relative;
+  		top: -.5em;
 	}
 
 	img {
 		width: 100%;
 		position: relative;
 		z-index: -10;
-		margin-top: -7.5em;
+		margin-top: -8.5em;
 	}
 }
 .hero-text {
@@ -125,5 +127,8 @@
 		background-color: #64c2d2;
 		color: #fff;
 		border: none;
+	}
+	textarea {
+		height: 200px;
 	}
 }
