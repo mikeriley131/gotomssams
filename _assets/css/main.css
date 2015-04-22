@@ -83,9 +83,6 @@ nav li {
 nav li:last-child {
   margin-right: 0;
 }
-nav .social {
-  margin-top: .125em;
-}
 nav .social li {
   margin-right: 1.5em;
 }
@@ -126,6 +123,10 @@ nav .social li a.twit {
 }
 nav .social li a.twit:hover {
   background-position: -60px -21px;
+}
+
+.nav-collapse .social {
+  margin-top: .125em;
 }
 
 .nav-toggle {
@@ -207,7 +208,7 @@ nav .social li a.twit:hover {
 }
 
 .our-process .row {
-  padding: 6em 1.5em;
+  padding: 6em 1.5em 4em;
 }
 .our-process h2 {
   float: left;
@@ -217,13 +218,46 @@ nav .social li a.twit:hover {
   float: left;
   width: 18%;
 }
-.our-process p {
+.our-process span {
+  float: left;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 166px;
   font-weight: bold;
-  line-height: .5;
+  line-height: .39;
   color: #dadcde;
+  margin-right: .025em;
   margin-bottom: 0;
+}
+.our-process span#one {
+  margin-right: -.1em;
+}
+.our-process .reveal {
+  float: left;
+  width: 45%;
+}
+.our-process .reveal p {
+  font-family: "Roboto Slab", serif;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1.25;
+  color: #64c2d2;
+  margin-bottom: 0;
+}
+.our-process .one {
+  -webkit-animation-delay: .5s;
+  animation-delay: .5s;
+}
+.our-process .two {
+  -webkit-animation-delay: 1.25s;
+  animation-delay: 1.25s;
+}
+.our-process .three {
+  -webkit-animation-delay: 2s;
+  animation-delay: 2s;
+}
+.our-process .four {
+  -webkit-animation-delay: 2.75s;
+  animation-delay: 2.75s;
 }
 
 .contact .row {
@@ -266,6 +300,48 @@ nav .social li a.twit:hover {
 }
 .contact textarea {
   height: 200px;
+}
+
+/* ANIMATE.CSS
+------------------------------------------------------------------------------ */
+.animated {
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
+@-webkit-keyframes fadeInDown {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(0, -100%, 0);
+    transform: translate3d(0, -100%, 0);
+  }
+
+  100% {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+@keyframes fadeInDown {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(0, -100%, 0);
+    -ms-transform: translate3d(0, -100%, 0);
+    transform: translate3d(0, -100%, 0);
+  }
+
+  100% {
+    opacity: 1;
+    -webkit-transform: none;
+    -ms-transform: none;
+    transform: none;
+  }
+}
+.fadeInDown {
+  -webkit-animation-name: fadeInDown;
+  animation-name: fadeInDown;
 }
 
 /* ===========================================================================

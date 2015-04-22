@@ -33,9 +33,6 @@ nav {
 			margin-right: 0;
 		}
 	}
-	.social {
-		margin-top: .125em;
-	}
 	.social li {
 		margin-right: 1.5em;
 
@@ -83,6 +80,9 @@ nav {
 			}
 		}
 	}
+}
+.nav-collapse .social {
+	margin-top: .125em;
 }
 .nav-toggle {
 	color: #fff;

@@ -69,7 +69,7 @@
 }
 .our-process {
 	.row {
-		padding: 6em 1.5em;
+		padding: 6em 1.5em 4em;
 	}
 	h2 {
 		float: left;
@@ -79,13 +79,48 @@
 		float: left;
 		width: 18%;
 	}
-	p {
+	span {
+		float: left;
 		font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 		font-size: 166px;
 		font-weight: bold;
-		line-height: .5;
+		line-height: .39;
 		color: #dadcde;
+		margin-right: .025em;
 		margin-bottom: 0;
+
+		&#one {
+			margin-right: -.1em;
+		}
+	}
+	.reveal {
+		float: left;
+		width: 45%;
+
+		p {
+			font-family: $headings;
+			font-size: 18px;
+			font-weight: 700;
+			line-height: 1.25;
+			color: $blue;
+			margin-bottom: 0;
+		}
+	}
+	.one {
+		-webkit-animation-delay: .5s;
+    	animation-delay: .5s;
+	}
+	.two {
+		-webkit-animation-delay: 1.25s;
+    	animation-delay: 1.25s;
+	}
+	.three {
+		-webkit-animation-delay: 2s;
+    	animation-delay: 2s;
+	}
+	.four {
+		-webkit-animation-delay: 2.75s;
+    	animation-delay: 2.75s;
 	}
 }
 .contact {
@@ -131,4 +166,47 @@
 	textarea {
 		height: 200px;
 	}
+}
+/* ANIMATE.CSS
+------------------------------------------------------------------------------ */
+.animated {
+	-webkit-animation-duration: 1s;
+	animation-duration: 1s;
+	-webkit-animation-fill-mode: both;
+	animation-fill-mode: both;
+}
+
+@-webkit-keyframes fadeInDown {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(0, -100%, 0);
+    transform: translate3d(0, -100%, 0);
+  }
+
+  100% {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+
+@keyframes fadeInDown {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(0, -100%, 0);
+    -ms-transform: translate3d(0, -100%, 0);
+    transform: translate3d(0, -100%, 0);
+  }
+
+  100% {
+    opacity: 1;
+    -webkit-transform: none;
+    -ms-transform: none;
+    transform: none;
+  }
+}
+
+.fadeInDown {
+  -webkit-animation-name: fadeInDown;
+  animation-name: fadeInDown;
 }

@@ -73,16 +73,32 @@
 			<div class="row">
 				<h2>Our process:</h2>
 				<div class="process-number">
-					<p>1</p>
+					<span id="one">1</span>
+					<div class="reveal wow animated fadeInDown one">
+						<img src="_assets/images/icon-ear.svg" alt="ear icon">
+						<p>Listen &amp; Assess</p>
+					</div>
 				</div>
 				<div class="process-number">
-					<p>2</p>
+					<span>2</span>
+					<div class="reveal wow animated fadeInDown two">
+						<img src="_assets/images/icon-design.svg" alt="design icon">
+						<p>Design &amp; Develop</p>
+					</div>
 				</div>
 				<div class="process-number">
-					<p>3</p>
+					<span>3</span>
+					<div class="reveal wow animated fadeInDown three">
+						<img src="_assets/images/icon-chart.svg" alt="chart icon">
+						<p>Evaluate &amp; Implement</p>
+					</div>
 				</div>
 				<div class="process-number">
-					<p>4</p>
+					<span>4</span>
+					<div class="reveal wow animated fadeInDown four">
+						<img src="_assets/images/icon-pin-point.svg" alt="pin point icon">
+						<p>Reflect &amp; Revisit</p>
+					</div>
 				</div>
 			</div>
 		</section>

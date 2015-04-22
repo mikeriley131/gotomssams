@@ -23,6 +23,7 @@
     "_assets/js/main.min.js": [
       "bower_components/jquery/dist/jquery.min.js",
       "_assets/js/responsive-nav.min.js",
+      "_assets/js/wow.min.js",
       "_assets/js/main.js"
     ]
   }
