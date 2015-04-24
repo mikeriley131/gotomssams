@@ -238,6 +238,36 @@
 /* SMALL SCREENS (SMALL PHONES)
 ----------------------------------------------------------------------------*/
 @media screen and (max-width: 499px) {
-
+	.gridlock .row {
+		width: 96%;
+	}
+	.contact li.phone {
+		width: 100%;
+	}
+	.contact li.city {
+		width: 100%;
+	}
 }
-
+/* VERY SMALL SCREENS
+------------------------------------------------------------------------------ */
+@media screen and (max-width: 450px) {
+	header {
+		margin-top: 20px;
+	}
+	.hero-image {
+		p {
+			top: -1.5em;
+		}
+		img {
+			margin-top: -1.5em;
+		}
+	}
+	.our-process {
+		span {
+			font-size: 150px;
+		}
+		.reveal {
+			width: 80%;
+		}
+	}
+}
