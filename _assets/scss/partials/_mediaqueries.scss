@@ -174,15 +174,19 @@
 	}
 	.hero-image {
 		p {
-			font-size: 1.25em;
-			text-align: center;
-			top: 4.75em;
+			font-size: .875em;
+			text-align: right;
+			color: $dark-grey;
+			top: -2.5em;
 		}
 		img {
-			margin-top: -6em;
+			margin-top: -2.5em;
 		}
 	}
 	.hero-text {
+		padding: 2em 0 1em;
+		margin-top: -1.5em;
+		
 		p {
 			font-size: 1.125em;
 			padding: 0 1.5em;
