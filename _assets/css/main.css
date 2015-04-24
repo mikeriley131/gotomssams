@@ -608,6 +608,10 @@ img.align-center {
     width: 96%;
   }
 
+  nav .social li {
+    margin-right: 1em;
+  }
+
   .contact li.phone {
     width: 100%;
   }
@@ -623,8 +627,18 @@ img.align-center {
     margin-top: 20px;
   }
 
+  .gridlock .row .min-push-1 {
+    margin-left: 8%;
+  }
+
+  nav {
+    margin-top: -1em;
+    margin-bottom: 2em;
+  }
+
   .hero-image p {
     top: -1.5em;
+    text-align: center;
   }
   .hero-image img {
     margin-top: -1.5em;

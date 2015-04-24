@@ -24,7 +24,7 @@
 			<div class="logo max-3 desktop-3 tablet-1 mobile-1">
 				<a href="/"><img src="_assets/images/go-to-ms-sams-logo.svg" alt="Go To Ms. Sams logo"></a>
 			</div>
-			<nav class="max-9 desktop-9 tablet-5 mobile-1 mobile-push-1 nav-collapse">
+			<nav class="max-9 desktop-9 tablet-5 mobile-1 mobile-push-1 min-1 min-push-1 nav-collapse">
 				<ul>
 					<li><a href="">About Ms. Sams</a></li>
 					<li><a href="">What We Do</a></li>
