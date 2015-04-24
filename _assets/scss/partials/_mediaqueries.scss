@@ -5,7 +5,15 @@
 /* VERY LARGE SCREENS (DESKTOP AND BIGGER)
 ------------------------------------------------------------------------------ */
 @media screen and (min-width: 1220px) {
-
+	.our-process {
+		h2 {
+			float: left;
+		}
+		.process-number {
+			width: 19%;
+			padding-left: 0;
+		}
+	}
 }
 
 /* LARGE SCREENS (DESKTOP/LAPTOP)
@@ -34,8 +42,14 @@
 		}
 	}
 	.our-process {
+		.row {
+			padding: 3em 1.5em 4em;
+		}
+		h2 {
+			margin-bottom: 1.5em;
+		}
 		.process-number {
-			width: 17%;
+			padding-left: 2em;
 		}
 		p {
 			font-size: 120px;
@@ -91,8 +105,10 @@
 			font-size: 1.125em;
 		}
 	}
-	.bordered .row {
-		padding: 2em 1.5em;
+	.bordered {
+		.row {
+			padding: 2em 1.5em;
+		}
 	}
 	.what-we-do {
 		div {
@@ -112,6 +128,15 @@
 		}
 		.process-number {
 			width: 25%;
+
+			span {
+				font-size: 156px;
+			}
+			.reveal {
+				p {
+					font-size: 14px;
+				}
+			}
 		}
 	}
 	.contact li.phone {
@@ -125,7 +150,85 @@
 /* MEDIUM SCREENS (LARGE PHONES)
 ----------------------------------------------------------------------------*/
 @media screen and (max-width: 739px) {
+	header {
+		margin-top: 10px;
+	}
+	.nav-toggle {
+		position: relative;
+		z-index: 10;
+	}
+	nav {
+		font-size: 15px;
+		margin-top: -4em;
 
+		li {
+			float: none;
+			margin-right: 0;
+			margin-bottom: .25em;
+		}
+		.social {
+			li {
+				float: left;
+			}
+		}
+	}
+	.hero-image {
+		p {
+			font-size: 1.25em;
+			text-align: center;
+			top: 4.75em;
+		}
+		img {
+			margin-top: -6em;
+		}
+	}
+	.hero-text {
+		p {
+			font-size: 1.125em;
+			padding: 0 1.5em;
+		}
+	}
+	.bordered {
+		.row {
+			padding: 2em 1.5em;
+		}
+	}
+	.what-we-do {
+		div {
+			padding: 0;
+		}
+	}
+	.our-process {
+		h2 {
+			margin-bottom: 1.5em;
+		}
+		.row {
+			padding: 2em 1.5em 5em;
+		}
+		.process-number {
+			text-align: center;
+		}
+		span {
+			font-size: 180px;
+		}
+		.reveal {
+			float: none;
+			width: 60%;
+			margin: 0 auto;
+			position: relative;
+			top: 3em;
+
+			p {
+				font-size: 13px;
+			}
+		}
+	}
+	.contact li.phone {
+		width: 46%;
+	}
+	footer p {
+		font-size: .75em;
+	}
 }
 
 /* SMALL SCREENS (SMALL PHONES)
