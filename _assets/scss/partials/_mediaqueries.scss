@@ -241,6 +241,9 @@
 	.gridlock .row {
 		width: 96%;
 	}
+	.gridlock .row .min-push-1 {
+		margin-left: 25%;
+	}
 	nav {
 		.social {
 			li {
@@ -270,7 +273,7 @@
 	}
 	.hero-image {
 		p {
-			top: -1.5em;
+			top: -1em;
 			text-align: center;
 		}
 		img {

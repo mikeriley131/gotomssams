@@ -608,6 +608,10 @@ img.align-center {
     width: 96%;
   }
 
+  .gridlock .row .min-push-1 {
+    margin-left: 25%;
+  }
+
   nav .social li {
     margin-right: 1em;
   }
@@ -637,7 +641,7 @@ img.align-center {
   }
 
   .hero-image p {
-    top: -1.5em;
+    top: -1em;
     text-align: center;
   }
   .hero-image img {
