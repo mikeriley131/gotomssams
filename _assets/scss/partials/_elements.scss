@@ -12,6 +12,10 @@ h1, h2, h3, h4 {
 	line-height: 1;
 	margin-top: 0;
 }
+h1 {
+	font-size: 1.5em;
+	font-weight: normal;
+}
 p {
 	margin-top: 0;
 }
@@ -33,4 +37,16 @@ li {
 }
 blockquote {
 	font-family: $headings;
+}
+::-webkit-input-placeholder {
+   color: $light-grey;
+}
+:-moz-placeholder {
+   color: $light-grey;  
+}
+::-moz-placeholder {
+   color: $light-grey;  
+}
+:-ms-input-placeholder {  
+   color: $light-grey;  
 }

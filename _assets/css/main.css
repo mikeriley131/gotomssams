@@ -26,6 +26,11 @@ h1, h2, h3, h4 {
   margin-top: 0;
 }
 
+h1 {
+  font-size: 1.5em;
+  font-weight: normal;
+}
+
 p {
   margin-top: 0;
 }
@@ -46,6 +51,22 @@ ul, ol {
 
 blockquote {
   font-family: "Roboto Slab", serif;
+}
+
+::-webkit-input-placeholder {
+  color: #b1b3b3;
+}
+
+:-moz-placeholder {
+  color: #b1b3b3;
+}
+
+::-moz-placeholder {
+  color: #b1b3b3;
+}
+
+:-ms-input-placeholder {
+  color: #b1b3b3;
 }
 
 /* ===========================================================================
@@ -69,7 +90,7 @@ nav {
   font-family: "Roboto Slab", serif;
   font-size: 18px;
   text-transform: lowercase;
-  color: #96999b;
+  color: #82898a;
   margin-top: 10em;
 }
 nav ul {
@@ -154,7 +175,6 @@ nav .social li a.twit:hover {
 .home h3 {
   font-size: 22px;
   font-weight: 700;
-  color: #b1b3b3;
   margin-bottom: 0;
 }
 
@@ -163,11 +183,9 @@ nav .social li a.twit:hover {
   border-bottom: 2px dotted #82898a;
 }
 
-.hero-image p {
-  font-family: "Roboto Slab", serif;
-  font-size: 1.5em;
+.hero-image h1 {
   color: #fff;
-  margin-top: .5em;
+  margin-top: 1.25em;
   position: relative;
   top: -.5em;
 }
@@ -204,7 +222,16 @@ nav .social li a.twit:hover {
 }
 .what-we-do p {
   font-size: 18px;
+}
+.what-we-do p:hover:after {
+  content: url("../images/icon-hand.svg");
+  margin-left: 5px;
+}
+.what-we-do .row div a {
   color: #b1b3b3;
+}
+.what-we-do .row div:hover a {
+  color: #64c2d2;
 }
 
 .our-process .row {
@@ -247,16 +274,16 @@ nav .social li a.twit:hover {
   animation-delay: .5s;
 }
 .our-process .two {
-  -webkit-animation-delay: 1.25s;
-  animation-delay: 1.25s;
+  -webkit-animation-delay: 1.5s;
+  animation-delay: 1.5s;
 }
 .our-process .three {
-  -webkit-animation-delay: 2s;
-  animation-delay: 2s;
+  -webkit-animation-delay: 2.5s;
+  animation-delay: 2.5s;
 }
 .our-process .four {
-  -webkit-animation-delay: 2.75s;
-  animation-delay: 2.75s;
+  -webkit-animation-delay: 3.5s;
+  animation-delay: 3.5s;
 }
 
 .contact .row {
@@ -304,8 +331,8 @@ nav .social li a.twit:hover {
 /* ANIMATE.CSS
 ------------------------------------------------------------------------------ */
 .animated {
-  -webkit-animation-duration: 1s;
-  animation-duration: 1s;
+  -webkit-animation-duration: 2.25s;
+  animation-duration: 2.25s;
   -webkit-animation-fill-mode: both;
   animation-fill-mode: both;
 }
@@ -346,6 +373,21 @@ nav .social li a.twit:hover {
 /* ===========================================================================
 ==== PRIMARY INTERIOR PAGE STYLES
 ============================================================================== */
+.interior header {
+  padding-bottom: 40px;
+  border-bottom: 1px solid #64c2d2;
+}
+.interior nav {
+  margin-top: 6em;
+}
+.interior aside {
+  background-color: #dbf2f5;
+  color: #55a1ac;
+}
+.interior h1 {
+  color: #64c2d2;
+}
+
 /* ===========================================================================
 ==== FOOTER
 ============================================================================== */
@@ -632,7 +674,8 @@ img.align-center {
   }
 
   .gridlock .row .min-push-1 {
-    margin-left: 8%;
+    margin-left: -23%;
+    margin-top: .25em;
   }
 
   nav {
@@ -653,5 +696,24 @@ img.align-center {
   }
   .our-process .reveal {
     width: 80%;
+  }
+}
+/* iPHONE SPECIFIC
+------------------------------------------------------------------------------ */
+@media screen and (max-width: 390px) {
+  .hero-text {
+    padding: 1.25em 0px 1em;
+    margin-top: -0.75em;
+  }
+  .hero-text p {
+    font-size: 1em;
+  }
+
+  .our-process span {
+    font-size: 120px;
+  }
+
+  .contact input[type="submit"] {
+    width: 50%;
   }
 }

@@ -1,3 +1,19 @@
 /* ===========================================================================
 ==== PRIMARY INTERIOR PAGE STYLES
 ============================================================================== */
+.interior {
+	header {
+		padding-bottom: 40px;
+		border-bottom: 1px solid $blue;
+	}
+	nav {
+		margin-top: 6em;
+	}
+	aside {
+		background-color: $light-blue;
+		color: $dark-blue;
+	}
+	h1 {
+		color: $blue;
+	}
+}

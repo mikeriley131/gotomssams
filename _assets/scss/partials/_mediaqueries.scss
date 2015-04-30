@@ -265,7 +265,8 @@
 		margin-top: 20px;
 	}
 	.gridlock .row .min-push-1 {
-		margin-left: 8%;
+		margin-left: -23%;
+		margin-top: .25em;
 	}
 	nav {
 		margin-top: -1em;
@@ -287,5 +288,25 @@
 		.reveal {
 			width: 80%;
 		}
+	}
+}
+/* iPHONE SPECIFIC
+------------------------------------------------------------------------------ */
+@media screen and (max-width: 390px) {
+	.hero-text {
+		padding: 1.25em 0px 1em;
+	    margin-top: -0.75em;
+
+	    p {
+	    	font-size: 1em;
+	    }
+	}
+	.our-process {
+		span {
+			font-size: 120px;
+		}
+	}
+	.contact input[type="submit"] {
+		width: 50%;
 	}
 }
