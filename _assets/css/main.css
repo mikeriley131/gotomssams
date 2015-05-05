@@ -17,7 +17,7 @@ body {
   background-color: #fff;
   font-family: "Open Sans", Helvetica, Arial, sans-serif;
   font-size: 14px;
-  line-height: 1.5;
+  line-height: 1.6;
 }
 
 h1, h2, h3, h4 {
@@ -374,7 +374,7 @@ nav .social li a.twit:hover {
 ==== PRIMARY INTERIOR PAGE STYLES
 ============================================================================== */
 .interior header {
-  padding-bottom: 40px;
+  padding-bottom: 2em;
   border-bottom: 1px solid #64c2d2;
 }
 .interior nav {
@@ -382,10 +382,42 @@ nav .social li a.twit:hover {
 }
 .interior aside {
   background-color: #dbf2f5;
+  font-family: "Roboto Slab", serif;
+  font-size: 18px;
   color: #55a1ac;
+  padding-top: 3em;
+}
+.interior aside p {
+  margin: 0;
+}
+.interior aside cite {
+  font-family: "Open Sans", Helvetica, Arial, sans-serif;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: bold;
+  display: inline-block;
+}
+.interior aside cite:before {
+  content: "\2013 \0020";
 }
 .interior h1 {
+  font-size: 48px;
   color: #64c2d2;
+  margin-bottom: .25em;
+}
+.interior h2 {
+  font-size: 15px;
+  color: #64c2d2;
+  font-weight: bold;
+  margin-bottom: .25em;
+}
+.interior .content {
+  padding-top: 3em;
+}
+.interior .intro {
+  font-family: "Roboto Slab", serif;
+  font-size: 18px;
+  color: #82898a;
 }
 
 /* ===========================================================================
