@@ -1,7 +1,7 @@
 <!DOCTYPE HTML>
 
 <html>
-	<head
+	<head>
 		<meta charset="UTF-8">
 		<meta name="description" content="">
 		<meta name="author" content="Mike Riley">
@@ -11,6 +11,8 @@
 
 		<link href='http://fonts.googleapis.com/css?family=Roboto+Slab:300,400,700|Open+Sans:400,700' rel='stylesheet' type='text/css'>
 		<link rel="stylesheet" href="_assets/css/main.min.css" />
+
+		<script src="_assets/js/main.min.js"></script>
 
 		<!--[if lt IE 9]>
 		<script src="http://html5shiv-printshiv.googlecode.com/svn/trunk/html5shiv-printshiv.js"></script>
@@ -44,13 +46,14 @@
 			</header>
 			<div class="row">
 				<aside class="max-4 desktop-4 tablet-2 mobile-3">
+					<img src="/_assets/images/sidebar-school-climate-culture.jpg" alt="">
 					<blockquote>
-						<p>"Jamila envisions, designs and implements school-based initiatives that support an inclusive, dynamic school culture. Jamila possesses an informed understanding of the needs of urban youth along with the skill to collaboratively revise and improve structures over time. She is a talented and tested educator who brings deep experience and hard-earned wisdom."</p>
+						<p>Jamila envisions, designs and implements school-based initiatives that support an inclusive, dynamic school culture. Jamila possesses an informed understanding of the needs of urban youth along with the skill to collaboratively revise and improve structures over time. She is a talented and tested educator who brings deep experience and hard-earned wisdom.</p>
 						<cite>Mark Conrad, Chief Schools Officer, Expeditionary Learning on LinkedIn</cite>
 					</blockquote>
 
 					<blockquote>
-						<p>"Jamila is equally talented in the areas of commitment, dedication, enthusiasm, strategy, and vision relating to moving youth forward. I've known Jamila for more than a decade and her hat has always been placed in the capacity of serving without fear or reservation around gaining a result. She makes a mark in all that she does."</p>
+						<p>Jamila is equally talented in the areas of commitment, dedication, enthusiasm, strategy, and vision relating to moving youth forward. I've known Jamila for more than a decade and her hat has always been placed in the capacity of serving without fear or reservation around gaining a result. She makes a mark in all that she does.</p>
 						<cite>Torin Ellis, Diversity Search Maverick / Interview Architect / Hybrid Recruiter  on LinkedIn</cite>
 					</blockquote>
 				</aside>
@@ -64,7 +67,7 @@
 					<p>Creating a school and community value system starts with thinking about the innate values you want every stakeholder in your building to promote and uphold. How are values integrated and measured? What structures are in place to provide support for these values to thrive? This workshop helps school leaders to align their vision for school climate and culture with supporting structures that promote a safe, positive and productive learning environment.</p>
 
 					<h2>The Power of Advisory</h2>
-					<p>How well do the adults in your building know the students? How well do students know each other? Advisory is a sac'red' time of the day where adults and students meet to build positive connections and meet students' inherent social and academic needs while providing the space for discovering new individual talents and abilities. We will work closely to ensure that advisory time is being used efficiently and in a way that promotes your school's values.</p>
+					<p>How well do the adults in your building know the students? How well do students know each other? Advisory is a sacred time of the day where adults and students meet to build positive connections and meet students' inherent social and academic needs while providing the space for discovering new individual talents and abilities. We will work closely to ensure that advisory time is being used efficiently and in a way that promotes your school's values.</p>
 
 					<h2>Parent Engagement</h2>
 					<p>Parent engagement is essential for the success of a school community. Even the most disengaged parents can be engaged when the culture of the school is inviting and understanding of parents' needs and desires to get involved. How are parents and members of the community engaged? How are they welcomed? Are they an active part of the decision making process of your school? Do they have a voice? Are your staff members in tuned with the cultures and backgrounds of the families they serve? Do you use parent participation data to drive parent engagement and student learning? This workshop challenges school leaders develop an inclusive and interactive parent engagement model for their school.</p>
@@ -83,6 +86,14 @@
 					<p>As a country, we benefit from the education of ALL children. However, how do we not only make learning relevant, but transformational for the communities in which students come from? Cultural competence provides a set of skills that professionals need in order to improve practice to serve all students and communicate effectively with their families. This workshop empowers educators to build on the cultural and language qualities that young people bring to the classroom rather than viewing those qualities as deficits.</p>
 				</section>
 			</div>
+			<footer>
+				<div class="row">
+					<p>Making meaningful connections with young people. &nbsp; &copy;<?php echo date('Y') ?> Jamila Sams</p>
+				</div>
+			</footer>
 		</div>
+		<script>
+		  var nav = responsiveNav(".nav-collapse");
+		</script>
 	</body>
 </html>

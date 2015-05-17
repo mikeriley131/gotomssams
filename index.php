@@ -1,7 +1,7 @@
 <!DOCTYPE HTML>
 
 <html>
-	<head
+	<head>
 		<meta charset="UTF-8">
 		<meta name="description" content="Ms. Sams...">
 		<meta name="author" content="Mike Riley">
@@ -64,7 +64,7 @@
 					</div>
 					<div class="max-4 desktop-4 contained">
 						<a href="#"><h3>Mentoring</h3></a>
-						<a href="#"><p>Using best practices that establish deep connections to youth.</p></a>
+						<a href="#"><p>Using best practices in the mentoring field to create and sustain robust and impactful mentoring programs.</p></a>
 					</div>
 					<div class="max-4 desktop-4 contained">
 						<a href="#"><h3>School &amp; Business Partnerships</h3></a>

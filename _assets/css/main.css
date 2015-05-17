@@ -16,8 +16,8 @@
 body {
   background-color: #fff;
   font-family: "Open Sans", Helvetica, Arial, sans-serif;
-  font-size: 14px;
-  line-height: 1.6;
+  font-size: 100%;
+  line-height: 1.5;
 }
 
 h1, h2, h3, h4 {
@@ -111,7 +111,7 @@ nav .social li:last-child {
   margin-right: 0;
 }
 nav .social li a {
-  background: url(../images/social-sprite.svg) no-repeat;
+  background: url(/images/social-sprite.svg) no-repeat;
   background-size: 85px;
   display: block;
   width: 18px;
@@ -160,7 +160,7 @@ nav .social li a.twit:hover {
   text-indent: -9999px;
   overflow: hidden;
   display: block;
-  background: url(../images/menu-icon.svg) no-repeat;
+  background: url(/images/menu-icon.svg) no-repeat;
 }
 
 /* ===========================================================================
@@ -177,31 +177,28 @@ nav .social li a.twit:hover {
   font-weight: 700;
   margin-bottom: 0;
 }
-
-.bordered .row {
+.home .bordered .row {
   padding: 4em 1.5em;
   border-bottom: 2px dotted #82898a;
 }
-
-.hero-image h1 {
+.home .hero-image h1 {
   color: #fff;
   margin-top: 1.25em;
   position: relative;
   top: -.5em;
 }
-.hero-image img {
+.home .hero-image img {
   width: 100%;
   position: relative;
   z-index: -10;
   margin-top: -8.5em;
 }
-
-.hero-text {
+.home .hero-text {
   background-color: rgba(100, 194, 210, 0.7);
   padding: 3em 0 1em;
   margin-top: -2.5em;
 }
-.hero-text p {
+.home .hero-text p {
   font-family: "Roboto Slab", serif;
   font-size: 1.66em;
   font-weight: 300;
@@ -210,41 +207,39 @@ nav .social li a.twit:hover {
   padding: 0 3em;
   margin: 0;
 }
-
-.what-we-do div {
+.home .what-we-do div {
   padding: 0 2em;
 }
-.what-we-do div:nth-child(2) {
+.home .what-we-do div:nth-child(2) {
   padding-left: 0;
 }
-.what-we-do div:nth-child(4) {
+.home .what-we-do div:nth-child(4) {
   padding-right: 0;
 }
-.what-we-do p {
+.home .what-we-do p {
   font-size: 18px;
 }
-.what-we-do p:hover:after {
-  content: url("../images/icon-hand.svg");
+.home .what-we-do p:hover:after {
+  content: url("/images/icon-hand.svg");
   margin-left: 5px;
 }
-.what-we-do .row div a {
+.home .what-we-do .row div a {
   color: #b1b3b3;
 }
-.what-we-do .row div:hover a {
+.home .what-we-do .row div:hover a {
   color: #64c2d2;
 }
-
-.our-process .row {
+.home .our-process .row {
   padding: 6em 1.5em 4em;
 }
-.our-process h2 {
+.home .our-process h2 {
   margin-right: .5em;
 }
-.our-process .process-number {
+.home .our-process .process-number {
   float: left;
   width: 25%;
 }
-.our-process span {
+.home .our-process span {
   float: left;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 166px;
@@ -254,14 +249,14 @@ nav .social li a.twit:hover {
   margin-right: .025em;
   margin-bottom: 0;
 }
-.our-process span#one {
+.home .our-process span#one {
   margin-right: -.1em;
 }
-.our-process .reveal {
+.home .our-process .reveal {
   float: left;
   width: 45%;
 }
-.our-process .reveal p {
+.home .our-process .reveal p {
   font-family: "Roboto Slab", serif;
   font-size: 18px;
   font-weight: 700;
@@ -269,62 +264,61 @@ nav .social li a.twit:hover {
   color: #64c2d2;
   margin-bottom: 0;
 }
-.our-process .one {
+.home .our-process .one {
   -webkit-animation-delay: .5s;
   animation-delay: .5s;
 }
-.our-process .two {
+.home .our-process .two {
   -webkit-animation-delay: 1.5s;
   animation-delay: 1.5s;
 }
-.our-process .three {
+.home .our-process .three {
   -webkit-animation-delay: 2.5s;
   animation-delay: 2.5s;
 }
-.our-process .four {
+.home .our-process .four {
   -webkit-animation-delay: 3.5s;
   animation-delay: 3.5s;
 }
-
-.contact .row {
+.home .contact .row {
   padding: 4em 1.5em;
 }
-.contact h2 {
+.home .contact h2 {
   float: left;
   margin-right: .5em;
 }
-.contact form {
+.home .contact form {
   font-family: "Roboto Slab", serif;
 }
-.contact ul {
+.home .contact ul {
   float: left;
   list-style-type: none;
 }
-.contact li {
+.home .contact li {
   float: left;
   width: 100%;
   margin-bottom: 1.5em;
 }
-.contact li.phone {
+.home .contact li.phone {
   width: 48.75%;
   margin-right: 1.5em;
 }
-.contact li.city {
+.home .contact li.city {
   width: 49%;
 }
-.contact input, .contact textarea {
+.home .contact input, .home .contact textarea {
   width: 100%;
   color: #b1b3b3;
   padding: 1em;
   border: 1px solid #b1b3b3;
 }
-.contact input[type='submit'] {
+.home .contact input[type='submit'] {
   width: 25%;
   background-color: #64c2d2;
   color: #fff;
   border: none;
 }
-.contact textarea {
+.home .contact textarea {
   height: 200px;
 }
 
@@ -387,32 +381,49 @@ nav .social li a.twit:hover {
   color: #55a1ac;
   padding-top: 3em;
 }
-.interior aside p {
+.interior aside img {
+  width: 100%;
+}
+.interior aside blockquote {
+  margin-bottom: 3em;
+}
+.interior aside blockquote p {
   margin: 0;
 }
-.interior aside cite {
+.interior aside blockquote p:before {
+  content: url(../images/curly-double-quote-left.png);
+  padding-right: 5px;
+  margin-left: -20px;
+  position: relative;
+  top: -3px;
+}
+.interior aside blockquote p:after {
+  content: url(../images/curly-double-quote-right.png);
+  padding-left: 5px;
+}
+.interior aside blockquote cite {
   font-family: "Open Sans", Helvetica, Arial, sans-serif;
   font-size: 12px;
   font-style: normal;
   font-weight: bold;
   display: inline-block;
 }
-.interior aside cite:before {
+.interior aside blockquote cite:before {
   content: "\2013 \0020";
 }
 .interior h1 {
-  font-size: 48px;
+  font-size: 3em;
   color: #64c2d2;
   margin-bottom: .25em;
 }
 .interior h2 {
-  font-size: 15px;
+  font-size: 1.25em;
   color: #64c2d2;
   font-weight: bold;
   margin-bottom: .25em;
 }
 .interior .content {
-  padding-top: 3em;
+  padding-top: 3.5em;
 }
 .interior .intro {
   font-family: "Roboto Slab", serif;
@@ -588,6 +599,26 @@ img.align-center {
     width: 47.75%;
   }
 
+  .interior nav {
+    margin-top: 3em;
+  }
+  .interior .content {
+    padding-top: 2.5em;
+  }
+  .interior h1 {
+    font-size: 2.25em;
+  }
+  .interior aside {
+    font-size: 14px;
+  }
+  .interior aside blockquote {
+    margin-left: 2em;
+    margin-right: 2em;
+  }
+  .interior aside blockquote cite {
+    font-size: 11px;
+  }
+
   footer p {
     font-size: .75em;
   }
@@ -669,6 +700,10 @@ img.align-center {
 
   .contact li.phone {
     width: 46%;
+  }
+
+  .interior aside {
+    height: auto !important;
   }
 
   footer p {

@@ -142,6 +142,31 @@
 	.contact li.phone {
 		width: 47.75%;
 	}
+	.interior {
+		nav {
+			margin-top: 3em;
+		}
+		.content {
+			padding-top: 2.5em;
+		}
+
+		h1 {
+			font-size: 2.25em;
+		}
+
+		aside {
+			font-size: 14px;
+
+			blockquote {
+				margin-left: 2em;
+				margin-right: 2em;
+
+				cite {
+					font-size: 11px;
+				}
+			}
+		}
+	}
 	footer p {
 		font-size: .75em;
 	}
@@ -229,6 +254,12 @@
 	}
 	.contact li.phone {
 		width: 46%;
+	}
+	.interior {
+
+		aside {
+			height: auto !important;
+		}
 	}
 	footer p {
 		font-size: .75em;
