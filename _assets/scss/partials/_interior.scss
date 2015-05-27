@@ -27,7 +27,7 @@
 				margin: 0;
 
 				&:before {
-					content: url(../images/curly-double-quote-left.png);
+					content: url(images/curly-double-quote-left.png);
 					padding-right: 5px;
 					margin-left: -20px;
 					position: relative;
@@ -35,10 +35,14 @@
 				}
 
 				&:after {
-					content: url(../images/curly-double-quote-right.png);
+					content: url(images/curly-double-quote-right.png);
 					padding-left: 5px;
 				}
 			}
+
+			p:nth-child(even):before, p:nth-child(even):after {
+					content: none;
+				}
 		}
 
 		blockquote cite {
@@ -66,6 +70,11 @@
 	}
 	.content {
 		padding-top: 3.5em;
+
+		ul {
+			margin-left: 2em;
+			margin-bottom: 1em;
+		}
 	}
 	.intro {
 		font-family: $headings;

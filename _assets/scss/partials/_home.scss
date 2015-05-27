@@ -19,6 +19,7 @@
 	}
 	.hero-image {
 		h1 {
+			font-size: 1.375em;
 			color: #fff;
 			margin-top: 1.25em;
 			position: relative;
@@ -29,7 +30,7 @@
 			width: 100%;
 			position: relative;
 			z-index: -10;
-			margin-top: -8.5em;
+			margin-top: -7.5em;
 		}
 	}
 	.hero-text {
@@ -63,7 +64,7 @@
 			font-size: 18px;
 
 			&:hover:after {
-				content: url('/images/icon-hand.svg');
+				content: url('images/icon-hand.svg');
 				margin-left: 5px;
 			}
 		}
