@@ -13,7 +13,7 @@ header {
 		width: 100%;
 	}
 }
-nav {
+.nav-collapse {
 	float: right;
 	font-family: $headings;
 	font-size: 18px;
@@ -28,30 +28,42 @@ nav {
 	ul {
 		float: right;
 		list-style-type: none;
-
-		&.sub-menu li {
-			display: none;
-
-			&:hover {
-				display: block;
-				width: 100%
-			}
-		}
+		display: inline;
 	}
 	li {
-		float: left;
+		display: inline-block;
 		margin-right: 3em;
+		position: relative;
 
 		&:last-child {
 			margin-right: 0;
 		}
+
+		ul.sub-menu {
+			  width: 300px;
+			  display: none;
+			  position: absolute;
+			  top: -118px;
+			  padding: 5px 0;
+
+			li {
+				width: 100%;
+				display: block;
+				padding: 5px 0;
+			}
+		}
+
+		&:hover ul.sub-menu {
+			display: block;
+		}
 	}
-	.social li {
+	li.social {
 		margin-right: 1.5em;
 
 		&:last-child {
 			margin-right: 0;
 		}
+
 		a {
 			background: url(images/social-sprite.svg) no-repeat;
 			background-size: 85px;
@@ -61,35 +73,38 @@ nav {
 			text-indent: 2em;
 			overflow: hidden;
 			white-space: nowrap;
+		}
+		
+		&.fb a {
+			width: 8px;
 
-			&.fb {
-				width: 8px;
-
-				&:hover {
-					background-position: 0 -21px;
-				}
+			&:hover {
+				background-position: 0 -21px;
 			}
-			&.inst {
-				background-position: -13px 0;
+		}
 
-				&:hover {
-					background-position: -13px -21px;
-				}
+		&.inst a {
+			background-position: -13px 0;
+
+			&:hover {
+				background-position: -13px -21px;
 			}
-			&.li {
-				background-position: -37px 0;
+		}
+		
+		&.li a {
+			background-position: -37px 0;
 
-				&:hover {
-					background-position: -37px -21px;
-				}
+			&:hover {
+				background-position: -37px -21px;
 			}
-			&.twit {
-				width: 24px;
-				background-position: -60px 0;
+		}
+		
+		&.twit a {
+			width: 24px;
+			background-position: -60px 0;
 
-				&:hover {
-					background-position: -60px -21px;
-				}
+			&:hover {
+				background-position: -60px -21px;
 			}
 		}
 	}

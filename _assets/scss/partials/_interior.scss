@@ -57,6 +57,13 @@
 			}
 		}
 	}
+	aside.about {
+		background-color: #fff;
+
+		p {
+			margin-left: 1em;
+		}
+	}
 	h1 {
 		font-size: 3em;
 		color: $blue;
@@ -80,5 +87,8 @@
 		font-family: $headings;
 		font-size: 18px;
 		color: $mid-grey;
+	}
+	.underline {
+		text-decoration: underline;
 	}
 }

@@ -18,7 +18,7 @@
   max-height: 0;
   position: absolute;
   display: block;
-  overflow: hidden;
+  /*overflow: hidden;*/
   zoom: 1;
 }
 

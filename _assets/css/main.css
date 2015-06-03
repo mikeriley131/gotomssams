@@ -85,7 +85,7 @@ header {
   width: 100%;
 }
 
-nav {
+.nav-collapse {
   float: right;
   font-family: "Roboto Slab", serif;
   font-size: 18px;
@@ -93,34 +93,44 @@ nav {
   color: #82898a;
   margin-top: 10em;
 }
-nav .menu {
+.nav-collapse .menu {
   float: right;
 }
-nav ul {
+.nav-collapse ul {
   float: right;
   list-style-type: none;
+  display: inline;
 }
-nav ul.sub-menu li {
-  display: none;
-}
-nav ul.sub-menu li:hover {
-  display: block;
-  width: 100%;
-}
-nav li {
-  float: left;
+.nav-collapse li {
+  display: inline-block;
   margin-right: 3em;
+  position: relative;
 }
-nav li:last-child {
+.nav-collapse li:last-child {
   margin-right: 0;
 }
-nav .social li {
+.nav-collapse li ul.sub-menu {
+  width: 300px;
+  display: none;
+  position: absolute;
+  top: -118px;
+  padding: 5px 0;
+}
+.nav-collapse li ul.sub-menu li {
+  width: 100%;
+  display: block;
+  padding: 5px 0;
+}
+.nav-collapse li:hover ul.sub-menu {
+  display: block;
+}
+.nav-collapse li.social {
   margin-right: 1.5em;
 }
-nav .social li:last-child {
+.nav-collapse li.social:last-child {
   margin-right: 0;
 }
-nav .social li a {
+.nav-collapse li.social a {
   background: url(images/social-sprite.svg) no-repeat;
   background-size: 85px;
   display: block;
@@ -130,29 +140,29 @@ nav .social li a {
   overflow: hidden;
   white-space: nowrap;
 }
-nav .social li a.fb {
+.nav-collapse li.social.fb a {
   width: 8px;
 }
-nav .social li a.fb:hover {
+.nav-collapse li.social.fb a:hover {
   background-position: 0 -21px;
 }
-nav .social li a.inst {
+.nav-collapse li.social.inst a {
   background-position: -13px 0;
 }
-nav .social li a.inst:hover {
+.nav-collapse li.social.inst a:hover {
   background-position: -13px -21px;
 }
-nav .social li a.li {
+.nav-collapse li.social.li a {
   background-position: -37px 0;
 }
-nav .social li a.li:hover {
+.nav-collapse li.social.li a:hover {
   background-position: -37px -21px;
 }
-nav .social li a.twit {
+.nav-collapse li.social.twit a {
   width: 24px;
   background-position: -60px 0;
 }
-nav .social li a.twit:hover {
+.nav-collapse li.social.twit a:hover {
   background-position: -60px -21px;
 }
 
@@ -266,6 +276,7 @@ nav .social li a.twit:hover {
 .home .our-process .reveal {
   float: left;
   width: 45%;
+  margin-top: -1em;
 }
 .home .our-process .reveal p {
   font-family: "Roboto Slab", serif;
@@ -274,6 +285,9 @@ nav .social li a.twit:hover {
   line-height: 1.25;
   color: #64c2d2;
   margin-bottom: 0;
+}
+.home .our-process .reveal p:first-of-type {
+  display: none;
 }
 .home .our-process .one {
   -webkit-animation-delay: .5s;
@@ -301,21 +315,23 @@ nav .social li a.twit:hover {
 .home .contact form {
   font-family: "Roboto Slab", serif;
 }
-.home .contact ul {
-  float: left;
-  list-style-type: none;
-}
-.home .contact li {
-  float: left;
+.home .contact .ninja-forms-all-fields-wrap {
   width: 100%;
-  margin-bottom: 1.5em;
 }
-.home .contact li.phone {
-  width: 48.75%;
+.home .contact .ninja-forms-required-items,
+.home .contact .text-wrap.label-above label,
+.home .contact .textarea-wrap.label-above label,
+.home .contact .input-counter {
+  display: none;
+}
+.home .contact .phone-wrap {
+  width: 48.25%;
+  float: left;
   margin-right: 1.5em;
 }
-.home .contact li.city {
-  width: 49%;
+.home .contact .city-wrap {
+  width: 48%;
+  float: left;
 }
 .home .contact input, .home .contact textarea {
   width: 100%;
@@ -425,6 +441,12 @@ nav .social li a.twit:hover {
 .interior aside blockquote cite:before {
   content: "\2013 \0020";
 }
+.interior aside.about {
+  background-color: #fff;
+}
+.interior aside.about p {
+  margin-left: 1em;
+}
 .interior h1 {
   font-size: 3em;
   color: #64c2d2;
@@ -447,6 +469,9 @@ nav .social li a.twit:hover {
   font-family: "Roboto Slab", serif;
   font-size: 18px;
   color: #82898a;
+}
+.interior .underline {
+  text-decoration: underline;
 }
 
 /* ===========================================================================
@@ -523,7 +548,7 @@ img.aligncenter {
 /* LARGE SCREENS (DESKTOP/LAPTOP)
 ----------------------------------------------------------------------------*/
 @media screen and (min-width: 980px) and (max-width: 1219px) {
-  nav {
+  .nav-collapse {
     margin-top: 8em;
   }
 
@@ -553,22 +578,37 @@ img.aligncenter {
   .home .our-process p {
     font-size: 120px;
   }
-  .home .contact li.phone {
-    width: 48.5%;
+  .home .contact .phone-wrap {
+    width: 48.25%;
+  }
+  .home .contact .city-wrap {
+    width: 48%;
   }
 }
 /* IPAD SPECIFICALLY
 ------------------------------------------------------------------------------ */
 /* TABLETS
 ------------------------------------------------------------------------------ */
+@media screen and (max-width: 979px) {
+  .nav-collapse li ul.sub-menu {
+    top: -84px;
+    font-size: .75em;
+  }
+
+  .nav-collapse li ul.sub-menu li {
+    padding: 3px 0;
+  }
+}
+/* TABLETS - LIMITED
+------------------------------------------------------------------------------ */
 @media screen and (min-width: 740px) and (max-width: 979px) {
-  nav {
+  .nav-collapse {
     margin-top: 2.5em;
   }
-  nav li {
+  .nav-collapse li {
     margin-right: 1.5em;
   }
-  nav .social li {
+  .nav-collapse .social li {
     margin-right: 1em;
   }
 
@@ -619,11 +659,8 @@ img.aligncenter {
   .home .our-process .process-number .reveal p {
     font-size: 14px;
   }
-  .home .contact li.phone {
-    width: 47.75%;
-  }
 
-  .interior nav {
+  .interior .nav-collapse {
     margin-top: 3em;
   }
   .interior .content {
@@ -654,22 +691,34 @@ img.aligncenter {
     margin-top: 10px;
   }
 
+  .interior nav {
+    margin-top: -4em;
+  }
+
   .nav-toggle {
     position: relative;
     z-index: 10;
   }
 
-  nav {
+  .nav-collapse {
     font-size: 15px;
     margin-top: -4em;
   }
-  nav li {
+  .nav-collapse ul {
+    width: 110%;
+  }
+  .nav-collapse li {
     float: none;
     margin-right: 0;
     margin-bottom: .25em;
+    display: block;
+    padding: 5px 0;
   }
-  nav .social li {
+  .nav-collapse li.social {
     float: left;
+  }
+  .nav-collapse li:hover ul.sub-menu {
+    display: none;
   }
 
   .home .hero-image h1 {
@@ -717,8 +766,8 @@ img.aligncenter {
   .home .our-process .reveal p {
     font-size: 13px;
   }
-  .home .contact li.phone {
-    width: 46%;
+  .home .contact .phone-wrap, .home .contact .city-wrap {
+    width: 100%;
   }
 
   .interior aside {
@@ -742,21 +791,6 @@ img.aligncenter {
   .gridlock .row {
     width: 96%;
   }
-
-  .gridlock .row .min-push-1 {
-    margin-left: 25%;
-  }
-
-  nav .social li {
-    margin-right: 1em;
-  }
-
-  .home .contact li.phone {
-    width: 100%;
-  }
-  .home .contact li.city {
-    width: 100%;
-  }
 }
 /* VERY SMALL SCREENS
 ------------------------------------------------------------------------------ */
@@ -765,14 +799,8 @@ img.aligncenter {
     margin-top: 20px;
   }
 
-  .gridlock .row .min-push-1 {
-    margin-left: -23%;
-    margin-top: .25em;
-  }
-
-  nav {
-    margin-top: -1em;
-    margin-bottom: 2em;
+  .nav-collapse .menu {
+    width: 140%;
   }
 
   .home .hero-image h1 {

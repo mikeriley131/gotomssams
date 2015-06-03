@@ -21,7 +21,7 @@
 /* LARGE SCREENS (DESKTOP/LAPTOP)
 ----------------------------------------------------------------------------*/
 @media screen and (min-width: 980px) and (max-width: 1219px) {
-	nav {
+	.nav-collapse {
 		margin-top: 8em;
 	}
 	.home {
@@ -57,8 +57,11 @@
 				font-size: 120px;
 			}
 		}
-		.contact li.phone {
-			width: 48.5%;
+		.contact .phone-wrap {
+  			width: 48.25%;
+		}
+		.contact .city-wrap {
+			width: 48%;
 		}
 	}
 }
@@ -71,8 +74,21 @@
 
 /* TABLETS
 ------------------------------------------------------------------------------ */
+@media screen and (max-width: 979px) {
+	.nav-collapse li ul.sub-menu {
+		top: -84px;
+		font-size: .75em;
+	}
+	.nav-collapse li ul.sub-menu li {
+		padding: 3px 0;
+	}
+
+}
+
+/* TABLETS - LIMITED
+------------------------------------------------------------------------------ */
 @media screen and (min-width: 740px) and (max-width: 979px) {
-	nav {
+	.nav-collapse {
 		margin-top: 2.5em;
 
 		li {
@@ -142,12 +158,9 @@
 				}
 			}
 		}
-		.contact li.phone {
-			width: 47.75%;
-		}
 	}
 	.interior {
-		nav {
+		.nav-collapse {
 			margin-top: 3em;
 		}
 		.content {
@@ -182,24 +195,35 @@
 	header {
 		margin-top: 10px;
 	}
+	.interior nav {
+		margin-top: -4em;
+	}
 	.nav-toggle {
 		position: relative;
 		z-index: 10;
 	}
-	nav {
+	.nav-collapse {
 		font-size: 15px;
 		margin-top: -4em;
+
+		ul {
+			width: 110%;
+		}
 
 		li {
 			float: none;
 			margin-right: 0;
 			margin-bottom: .25em;
-		}
-		.social {
-			li {
+			display: block;
+			padding: 5px 0;
+
+			&.social {
 				float: left;
 			}
 		}
+		li:hover ul.sub-menu {
+  			display: none;
+  		}
 	}
 	.home {
 		.hero-image {
@@ -257,8 +281,8 @@
 				}
 			}
 		}
-		.contact li.phone {
-			width: 46%;
+		.contact .phone-wrap, .contact .city-wrap {
+			width: 100%;
 		}
 	}
 	.interior {
@@ -286,24 +310,6 @@
 	.gridlock .row {
 		width: 96%;
 	}
-	.gridlock .row .min-push-1 {
-		margin-left: 25%;
-	}
-	nav {
-		.social {
-			li {
-				margin-right: 1em;
-			}
-		}
-	}
-	.home {
-		.contact li.phone {
-			width: 100%;
-		}
-		.contact li.city {
-			width: 100%;
-		}
-	}
 }
 /* VERY SMALL SCREENS
 ------------------------------------------------------------------------------ */
@@ -311,13 +317,8 @@
 	header {
 		margin-top: 20px;
 	}
-	.gridlock .row .min-push-1 {
-		margin-left: -23%;
-		margin-top: .25em;
-	}
-	nav {
-		margin-top: -1em;
-		margin-bottom: 2em;
+	.nav-collapse .menu {
+		width: 140%;
 	}
 	.home {
 		.hero-image {

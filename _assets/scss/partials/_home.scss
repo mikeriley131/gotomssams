@@ -103,6 +103,7 @@
 		.reveal {
 			float: left;
 			width: 45%;
+			margin-top: -1em;
 
 			p {
 				font-family: $headings;
@@ -111,6 +112,10 @@
 				line-height: 1.25;
 				color: $blue;
 				margin-bottom: 0;
+
+				&:first-of-type {
+					display: none;
+				}
 			}
 		}
 		.one {
@@ -141,22 +146,23 @@
 		form {
 			font-family: $headings;
 		}
-		ul {
-			float: left;
-			list-style-type: none;
-		}
-		li {
-			float: left;
+		.ninja-forms-all-fields-wrap {
 			width: 100%;
-			margin-bottom: 1.5em;
-
-			&.phone {
-				width: 48.75%;
-				margin-right: 1.5em;
-			}
-			&.city {
-				width: 49%;
-			}
+		}
+		.ninja-forms-required-items,
+		.text-wrap.label-above label,
+		.textarea-wrap.label-above label,
+		.input-counter {
+			display: none;
+		}
+		.phone-wrap {
+			width: 48.25%;
+			float: left;
+			margin-right: 1.5em;
+		}
+		.city-wrap {
+			width: 48%;
+			float: left;
 		}
 		input, textarea {
 			width: 100%;
