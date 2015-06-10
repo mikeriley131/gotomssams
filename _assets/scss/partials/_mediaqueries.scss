@@ -50,8 +50,12 @@
 			h2 {
 				margin-bottom: 1.5em;
 			}
+			.reveal {
+				width: 50%;
+			}
 			.process-number {
 				padding-left: 2em;
+				text-align: center;
 			}
 			p {
 				font-size: 120px;
@@ -215,7 +219,7 @@
 			margin-right: 0;
 			margin-bottom: .25em;
 			display: block;
-			padding: 5px 0;
+			padding: 0;
 
 			&.social {
 				float: left;
@@ -316,6 +320,10 @@
 @media screen and (max-width: 450px) {
 	header {
 		margin-top: 20px;
+
+		.row {
+			margin-bottom: 2em;
+		}
 	}
 	.nav-collapse .menu {
 		width: 140%;
@@ -323,7 +331,7 @@
 	.home {
 		.hero-image {
 			h1 {
-				top: -1em;
+				top: -1.5em;
 				text-align: center;
 			}
 			img {
